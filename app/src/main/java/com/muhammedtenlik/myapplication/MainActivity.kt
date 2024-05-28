@@ -30,6 +30,10 @@ class MainActivity : AppCompatActivity() {
         binding.button2.setOnClickListener{
             var araba=Araba("Clio","Renault",2023)
             binding.textView.text=araba.Marka+" "+araba.Model+" "+ araba.ÜretimYıl
+            araba.testFonksiyonu()
+            araba.ClioMotor=1.3
+            println(araba.ClioMotor)
+            println(araba.TransitMotorDegis())
         }
     }
 }
