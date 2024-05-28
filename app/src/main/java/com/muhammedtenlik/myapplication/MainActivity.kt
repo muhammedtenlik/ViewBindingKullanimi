@@ -16,20 +16,20 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)
-        val araba1=Araba()
-        val  araba2=Araba()
+        //val araba1=Araba()
+        //val  araba2=Araba()
         binding.button.setOnClickListener{
-            araba1.Marka="Ford"
-            araba1.Model="Transit"
-            araba1.ÜretimYıl=2012
-            binding.textView.text=araba1.Marka +" "+araba1.Model +" " + araba1.ÜretimYıl
+        //    araba1.Marka="Ford"
+          //  araba1.Model="Transit"s
+           // araba1.ÜretimYıl=2012
+            //binding.textView.text=araba1.Marka +" "+araba1.Model +" " + araba1.ÜretimYıl
+            var araba=Araba("Transit","Ford",2012)
+            binding.textView.text=araba.Marka+" "+araba.Model+" "+ araba.ÜretimYıl
 
         }
         binding.button2.setOnClickListener{
-            araba1.Marka="Renault"
-            araba1.Model="Clio"
-            araba1.ÜretimYıl=2023
-            binding.textView.text=araba1.Marka +" "+araba1.Model +" " + araba1.ÜretimYıl
+            var araba=Araba("Clio","Renault",2023)
+            binding.textView.text=araba.Marka+" "+araba.Model+" "+ araba.ÜretimYıl
         }
     }
 }
